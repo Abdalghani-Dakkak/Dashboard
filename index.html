@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <aside id="aside">
+      <button onclick="closeAside()"><i class="fa-solid fa-xmark"></i></button>
+      <div id="logo">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+      </div>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li class="active">
+          <a href="#" class="Aactive"
+            ><i class="fa-solid fa-square-poll-vertical"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-chart-pie"></i></a>
+        </li>
+      </ul>
+    </aside>
+
+    <header>
+      <button id="barBtn" onclick="openAside()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <h1>Overview</h1>
+      <form action="">
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="search" placeholder="Search somthing..." />
+      </form>
+      <div>
+        <p>Abdalghani Dakkak <i class="fa-solid fa-angle-down"></i></p>
+        <img
+          src="./assets/images/Avatar-Profile-Vector-PNG-Cutout.png"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <main>
+      <section id="s11">
+        <h1>Expence</h1>
+        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <p><span class="dollar">$</span> 5340,00 <span>on this week</span></p>
+        <div id="blue">
+          <div>
+            <span id="bMon"></span>
+            <p>Mon</p>
+          </div>
+          <div>
+            <span id="bTue"></span>
+            <p>Tue</p>
+          </div>
+          <div>
+            <span id="bWed"></span>
+            <p>Wed</p>
+          </div>
+          <div>
+            <span id="bThu"></span>
+            <p>Thu</p>
+          </div>
+          <div>
+            <span id="bFri"></span>
+            <p>Fri</p>
+          </div>
+          <div>
+            <span id="bSat"></span>
+            <p>Sat</p>
+          </div>
+          <div>
+            <span id="bSun"></span>
+            <p>Sun</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="s12">
+        <h1>Income</h1>
+        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <p><span class="dollar">$</span> 1980,00 <span>on this week</span></p>
+        <div id="red">
+          <div>
+            <span id="rMon"></span>
+            <p>Mon</p>
+          </div>
+          <div>
+            <span id="rTue"></span>
+            <p>Tue</p>
+          </div>
+          <div>
+            <span id="rWed"></span>
+            <p>Wed</p>
+          </div>
+          <div>
+            <span id="rThu"></span>
+            <p>Thu</p>
+          </div>
+          <div>
+            <span id="rFri"></span>
+            <p>Fri</p>
+          </div>
+          <div>
+            <span id="rSat"></span>
+            <p>Sat</p>
+          </div>
+          <div>
+            <span id="rSun"></span>
+            <p>Sun</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="s2">
+        <h1>Your cards</h1>
+        <div>
+          <img src="./assets/images/Mastercard_logo_PNG1.png" alt="" />
+          <p>**** 5689</p>
+        </div>
+        <div>
+          <img src="./assets/images/Mastercard_logo_PNG1.png" alt="" />
+          <p>**** 3424</p>
+        </div>
+      </section>
+
+      <section id="s3">
+        <h1>Upgrade your account to <span>PRO</span></h1>
+        <p>
+          With a <span>PRO</span> account you get many additional and convenient
+          features to control your finances.
+        </p>
+        <img src="" alt="" />
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </section>
+
+      <section id="s4">
+        <h1>Latest transactions</h1>
+        <p id="seeAll">See all</p>
+        <div id="Ptrans" class="Perant">
+          <div class="trans">
+            <img
+              src="./assets/images/Avatar-Profile-Vector-PNG-Cutout.png"
+              alt=""
+            />
+            <span>Spotify</span>
+            <p>Dec 29, 2:35 PM</p>
+            <p>ID: 45673</p>
+            <span>- $569.50</span>
+          </div>
+          <div class="trans">
+            <img
+              src="./assets/images/Avatar-Profile-Vector-PNG-Cutout.png"
+              alt=""
+            />
+            <span>Transfer</span>
+            <p>Dec 28, 1:20 PM</p>
+            <p>ID: 76154</p>
+            <span>+ $350.50</span>
+          </div>
+          <div class="trans">
+            <img
+              src="./assets/images/Avatar-Profile-Vector-PNG-Cutout.png"
+              alt=""
+            />
+            <span>Investments</span>
+            <p>Dec 27, 4:55 PM</p>
+            <p>ID: 32567</p>
+            <span>- $3448.99 </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="s5">
+        <h1>Statistics by category</h1>
+        <div id="percent">
+          <div id="Pcircle">
+            <div id="cdown">
+              <div id="c1"></div>
+              <div id="c2"></div>
+            </div>
+            <div id="cup">
+              <div id="c3"></div>
+            </div>
+            <div id="cparagraph">
+              <p>100<span>%</span></p>
+            </div>
+          </div>
+        </div>
+        <div id="other">
+          <ul>
+            <li class="li1">
+              <i class="fa-solid fa-circle li1"></i>
+              <p>Other expenses - 50%</p>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li class="li2">
+              <i class="fa-solid fa-circle li2"></i>
+              <p>Entertainment - 35%</p>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+            <li class="li3">
+              <i class="fa-solid fa-circle li3"></i>
+              <p>Investments - 15%</p>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/a7e91dc705.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
